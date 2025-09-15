@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Clima</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="weather">
+        <h2>Previsão do Tempo</h2>
+        <input type="text" id="cityInput" placeholder="Digite a cidade">
+        <button onclick="getWeather()">Buscar</button>
+        
+        <div id="result"></div>
+        
+        <div id="extra" class="hidden">
+            <p>💨 Vento: <span id="wind"></span> m/s</p>
+            <p>🧭 Pressão: <span id="pressure"></span> hPa</p>
+            <p>🌅 Nascer do sol: <span id="sunrise"></span></p>
+            <p>🌇 Pôr do sol: <span id="sunset"></span></p>
+        </div>
+
+        <div id="forecast" class="forecast hidden"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
